@@ -7,40 +7,42 @@
   <body>
     <header class="header">
       <section class="header-list">
-        <a class="logo">ТЕХНОМАРТ</a> 
+        <a class="header-logo">ТЕХНОМАРТ</a> 
           <ul class="header-navigation">
-            <li>Закладки:</li>
-            <li>Корзина:</li>
+            <li class="header-link"><a>Закладки:</a></li>
+            <li class="header-link"><a>Корзина:</a></li>
             <li class="checkout"><a href="checkout.html">Оформить заказ</a></li>
           </ul>
           <span class="search">Поиск:</span>  
       </section>
-      <nav class="navigation">
-        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <div class="header-title">
+        <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <p class="main-phone">+7(812)555-05-55</p>
         <p class="main-address">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
         <ul class="user-navigation">
-          <li>Войти</li>
-          <li>Регистрация</li>
+          <li class="header-login"><a href="">Войти</a></li>
+          <li class="header-login"><a href="">Регистрация</a></li>
         </ul>
+      </div>
+      <nav class="navigation">
         <ul class="navigation-main">
-          <li><a href="Index.html">Главная</a></li>   
-          <li><a href="About.html">Компания</a></li>  
-          <li><a href="Catalog.html">Каталог</a></li>   
-          <li><a href="News.html">Новости</a></li>
-          <li><a href="Offers.html">Спецпредложения</a></li>
-          <li><a href="Delivery.html">Доставка</a></li>
-          <li><a href="Contacts.html">Контакты</a></li>
+          <li class="navigation-list"><a href="Index.html">Главная</a></li>   
+          <li class="navigation-list"><a href="About.html">Компания</a></li>  
+          <li class="navigation-list"><a href="Catalog.html">Каталог</a></li>   
+          <li class="navigation-list"><a href="News.html">Новости</a></li>
+          <li class="navigation-list"><a href="Offers.html">Спецпредложения</a></li>
+          <li class="navigation-list"><a href="Delivery.html">Доставка</a></li>
+          <li class="navigation-list"><a href="Contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
 
   	<main>
       <ul class="breadcrumbs">
-        <li class="main-page"><a href="index.html"><img src="###" alt="Главная страница"></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="Tools.html">Инструмент</a></li>
-        <li>Перфораторы</li>
+        <li class="breadcrumbs-main"><a href="index.html"><img src="###" alt="Главная страница"></li>
+        <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
+        <li class="breadcrumbs-item"><a href="Tools.html">Инструмент</a></li>
+        <li class="breadcrumbs-corrent"><a>Перфораторы</a></li>
       </ul>
       <h1 class="main-item">Перфораторы</h1>
       <section class="filters">
@@ -53,27 +55,26 @@
       </section>
       <ul class="catalog-list">
           <li class="catalog-item">
-            <h3>Перфоратор BOSCH BFG 9000</h3>
+            <h3 class="catalog-item-title">Перфоратор BOSCH BFG 9000</h3>
             <img  class="catalog-picture" src="http://placehold.it/150x150" alt="Перфоратор Bosch BFG 9000">
             <p class="catalog-old-price">32500 Р.</p>
             <p class="catalog-current-price">25500 Р.</p>
           </li>
           <li class="catalog-item">
-            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
             <img  class="catalog-picture" src="http://placehold.it/150x150" alt="Перфоратор Bosch BFG 9000">
             <p class="catalog-old-price">22500 Р.</p>
             <p class="catalog-current-price">15500 Р.</p>
           </li>
           <li class="catalog-item">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
             <img  class="catalog-picture" src="http://placehold.it/150x150" alt="Перфоратор Bosch BFG 9000">
             <p class="catalog-old-price">30500 Р.</p>
             <p class="catalog-current-price">25500 Р.</p>
           </li>
           <li class="catalog-item">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
             <img  class="catalog-picture" src="http://placehold.it/150x150" alt="Перфоратор Bosch BFG 9000">
-            <p class="catalog-old-price"></p>
             <p class="catalog-current-price">12500 Р.</p>
           </li>
         </ul>
@@ -84,8 +85,8 @@
         <li class="pagination-next"><a href="#">Следующая</a></li>
       </ul>
       <section class="catalog-item-about">
-        <h2 class="main-info-h2">Пара слов о перфораторах</h2>   
-        <p class="main-info-p">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне, камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;:в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>     
+        <h2 class="main-info-title">Пара слов о перфораторах</h2>   
+        <p class="main-info-desc">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне, камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;:в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>     
       </section>
     </main> 
 
@@ -94,17 +95,17 @@
         <a class="logo">ТЕХНОМАРТ</a>
         <p class="footer-contacts">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br>+7(812)555-05-55</p>
         <ul class="footer-site-navigation">
-          <li><a href="About.html">Компания</a></li>
-          <li><a href="News.html">Новости</a></li>
-          <li><a href="Catalog.html">Каталог</a></li> 
-          <li><a href="Delivery.html">Доставка</a></li>
-          <li><a href="Contacts.html">Контакты</a></li>
+          <li class="footer-navigation-item"><a href="About.html">Компания</a></li>
+          <li class="footer-navigation-item"><a href="News.html">Новости</a></li>
+          <li class="footer-navigation-item"><a href="Catalog.html">Каталог</a></li>  
+          <li class="footer-navigation-item"><a href="Delivery.html">Доставка</a></li>
+          <li class="footer-navigation-item"><a href="Contacts.html">Контакты</a></li>
         </ul>
         <ul class="footer-goods-navigation">
-          <li><a href="Materials.html">Материалы</a></li>
-          <li><a href="Equipment.html">Техника</a></li>
-          <li><a href="Tools.html">Инструмент</a></li>
-          <li><a href="Offers.html">Спецпредложения</a></li>
+          <li class="footer-navigation-goods"><a href="Materials.html">Материалы</a></li>
+          <li class="footer-navigation-goods"><a href="Equipment.html">Техника</a></li>
+          <li class="footer-navigation-goods"><a href="Tools.html">Инструмент</a></li>
+          <li class="footer-navigation-goods"><a href="Offers.html">Спецпредложения</a></li>
         </ul>
       </section>
       <section class="footer-info">
@@ -115,8 +116,8 @@
             <li><a class="social-button" href="#">Инстаграм</a></li>
           </ul>
           <ul class="footer-mail">
-            <li>Обратная связь:<br><a class="mail" href="mail.ru">mail.ru</a></li>
-            <li>Разработано &#8211; <br><a class="created" href="https://vk.com/id37774044">сслыка на создателя</a></li>
+            <li class="footer-mail-item">Обратная связь:<br><a class="mail" href="mail.ru">mail.ru</a></li>
+            <li class="footer-mail-item">Разработано &#8211; <br><a class="created" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></li>
           </ul>
       </section>
     </footer>
