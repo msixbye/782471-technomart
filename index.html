@@ -13,7 +13,8 @@
   					<li class="header-link"><a>Корзина:</a></li>
   					<li class="checkout"><a href="checkout.html">Оформить заказ</a></li>
   				</ul>
-  				<span class="search">Поиск:</span>	
+  				<label for="search" class="search">Поиск:</label>
+  				<input type="search" class="search" name="search" id="search">
   		</section>
   		<div class="header-title">
   			<h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -66,17 +67,19 @@
   				<li class="slider">
   					<p class="slider-title">Перфораторы</p>
   					<p class="slider-description">Настоящие мужские игрушки</p>
-  					<span class="slider-button-left"></span>
-  					<span class="slider-button-rigt"></span>
+  					<button class="slider-button-left" type="button">назад</button>
+  					<button class="slider-button-rigt">вперед</button>
   					<a href="Catalog.html" class="open-catalog">открыть каталог</a>
   				</li>
   				<li class="slider">
   					<p class="slider-title">Дрели</p>
   					<p class="slider-description">Соседям на радость!</p>
-  					<span class="slider-button-left"></span>
-  					<span class="slider-button-rigt"></span>
+  					<button class="slider-button-left">назад</button>
+  					<button class="slider-button-rigt">вперед</button>
   					<a href="Catalog.html" class="open-catalog">открыть каталог</a>
   				</li>
+  				<input type="radio" name="slider-radio"><span class="visually-hidden">слайд 1 </span>
+  				<input type="radio" name="slider-radio"><span class="visually-hidden">слайд 2 </span>
   			</ul>
   			
   		</section>
@@ -179,7 +182,7 @@
   				<h2 class="main-info-title">Контакты</h2>
   				<p class="main-info-desc">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
   				<a href="map" >Карта<br></a>
-  				<a class="lost-popup">Заблудились? напишите нам!</a>
+  				<a href="#" class="lost-popup">Заблудились? напишите нам!</a>
   			</div>
   		</section>
   	</main>
@@ -215,5 +218,23 @@
   				</ul>
   		</section>
   	</footer>
+
+  	<section class="lost">
+  		<form class="lost-form">
+  			<label for="form-name">Ваше имя:</label><br>
+  			<input type="text" name="user-name" placeholder="Имя Фамилия" id="form-name"><br>
+  			<label for="form-email">Ваш e-mail:</label><br>
+  			<input type="email" name="user-email" placeholder="email@example.com" id="form-email"><br>
+  			<label for="form-text">Текст письма:</label><br>
+  			<textarea placeholder="В свободной форме" id="form-text"></textarea>
+  			<input type="submit" name="submit" value="Отправить">
+  		</form>
+  		<button type="button" class="modal-close">Закрыть</button>
+  	</section>
+
+  	<section class="map-popup">
+  		<img src="img/map-popup.jpg"></img>
+  		<button type="button" class="modal-close">Закрыть</button>
+  	</section>
   </body>
 </html>

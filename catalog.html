@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Техномарт - каталог</title>
   </head>
   <body>
-    <header class="header">
+      <header class="header">
       <section class="header-list">
         <a class="header-logo">ТЕХНОМАРТ</a> 
           <ul class="header-navigation">
@@ -13,7 +13,8 @@
             <li class="header-link"><a>Корзина:</a></li>
             <li class="checkout"><a href="checkout.html">Оформить заказ</a></li>
           </ul>
-          <span class="search">Поиск:</span>  
+          <label for="search" class="search">Поиск:</label>
+          <input type="search" class="search" name="search" id="search">
       </section>
       <div class="header-title">
         <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -46,8 +47,32 @@
       </ul>
       <h1 class="main-item">Перфораторы</h1>
       <section class="filters">
-        <h3 class="catalog-h3">Фильтры</h3>
-        <!--тут форма-->
+        <h3 class="catalog-h3">Фильтр:</h3>
+          <form class="catalog-form">
+            <fieldset>
+              <legend class="catalog-form-title">Цена</legend>
+              <input type="range" name="renge" class="renge" min="0" max="35000" value="30000" id="range">
+              <output class="range-output">0</output>
+              <output class="range-output">0</output>
+            </fieldset>
+            <fieldset>
+            <legend class="catalog-form-title">Производители:</legend>
+              <ul class="catalog-company">
+                <li><label class="company-checkbox"><input type="checkbox" name="catelog-company" checked><span class="checkbox-indicator"></span>BOSCH</label></li>
+                <li><label class="company-checkbox"><input type="checkbox" name="catelog-company"><span class="checkbox-indicator"></span>ИНТЕРСКОЛ</label></li>
+                <li><label class="company-checkbox"><input type="checkbox" name="catelog-company" checked><span class="checkbox-indicator"></span>MAKITA</label></li>
+                <li><label class="company-checkbox"><input type="checkbox" name="catelog-company"><span class="checkbox-indicator"></span>DeWalt</label></li>
+                <li><label class="company-checkbox"><input type="checkbox" name="catelog-company"><span class="checkbox-indicator"></span>HITACHI</label></li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend class="catalog-form-title">Питание:</legend>
+              <ul>
+                <li class="catalog-supply"><input type="radio" name="catalog-supply"><span class="catalog-supply-icon"></span>Аккумуляторные</li>
+                <li class="catalog-supply"><input type="radio" name="catalog-supply"><span class="catalog-supply-icon"></span>Сетевые</li>
+              </ul>
+            </fieldset>
+          </form>
       </section>
       <section class="sort">
         <h3 class="catalog-h3">Сортировка</h3>
@@ -121,5 +146,8 @@
           </ul>
       </section>
     </footer>
+
   </body>
 </html>
+
+
