@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт - главная</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> <!--Cuprom + PTsans-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
   	<header class="header">
   		<section class="header-list">
-  			<a class="header-logo">ТЕХНОМАРТ</a> 
+  			<a href="#" class="header-logo">ТЕХНОМАРТ</a> 
   				<ul class="header-navigation">
   					<li class="header-link"><a>Закладки:</a></li>
   					<li class="header-link"><a>Корзина:</a></li>
@@ -21,8 +24,8 @@
   			<p class="main-phone">+7(812)555-05-55</p>
   			<p class="main-address">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
   			<ul class="user-navigation">
-  				<li class="header-login"><a href="">Войти</a></li>
-  				<li class="header-login"><a href="">Регистрация</a></li>
+  				<li class="header-login"><a href="#">Войти</a></li>
+  				<li class="header-login"><a href="#">Регистрация</a></li>
   			</ul>
   		</div>
   		<nav class="navigation">
@@ -68,14 +71,14 @@
   					<p class="slider-title">Перфораторы</p>
   					<p class="slider-description">Настоящие мужские игрушки</p>
   					<button class="slider-button-left" type="button">назад</button>
-  					<button class="slider-button-rigt">вперед</button>
+  					<button class="slider-button-rigt" type="button">вперед</button>
   					<a href="Catalog.html" class="open-catalog">открыть каталог</a>
   				</li>
   				<li class="slider">
   					<p class="slider-title">Дрели</p>
   					<p class="slider-description">Соседям на радость!</p>
-  					<button class="slider-button-left">назад</button>
-  					<button class="slider-button-rigt">вперед</button>
+  					<button class="slider-button-left" type="button">назад</button>
+  					<button class="slider-button-rigt" type="button">вперед</button>
   					<a href="Catalog.html" class="open-catalog">открыть каталог</a>
   				</li>
   				<input type="radio" name="slider-radio"><span class="visually-hidden">слайд 1 </span>
@@ -85,7 +88,7 @@
   		</section>
   		<section class="popular">
   			<div class="popular-head">
-  				<h2 class="popular-title">Популярные товары</h2>
+  				<h2 class="popular-title">Популярные товары:</h2>
   				<a href="catalog.html" class="popular-link">Все популярные товары</a>
   			</div>
   			<ul class="catalog-list">
@@ -120,14 +123,14 @@
   				<a href="#" class="popular-link">Все производители</a>
   			</div>
   			<ul class="mark-list">
-  				<li class="mark"><a href="#bosch"><img src="http://placehold.it/150x150" width="100" height="50" alt="bosch">Bosch</a></li>
-  				<li class="mark"><a href="#makita"><img src="http://placehold.it/150x150" width="100" height="50" alt="makita">Makita</a></li>
-  				<li class="mark"><a href="#deWALT"><img src="http://placehold.it/150x150" width="100" height="50" alt="deWALT">DeWALT</a></li>
-  				<li class="mark"><a href="#interskol"><img src="http://placehold.it/150x150" width="100" height="50" alt="interskol">интерскол</a></li>
-  				<li class="mark"><a href="#hitachi"><img src="http://placehold.it/150x150" width="100" height="50" alt="hitachi">hitachi</a></li>
-  				<li class="mark"><a href="#lg"><img src="http://placehold.it/150x150" width="100" height="50" alt="lg">LG</a></li>
-  				<li class="mark"><a href="#AEG"><img src="http://placehold.it/150x150" width="100" height="50" alt="AEG">AEG</a></li>
-  				<li class="mark"><a href="#metabo"><img src="http://placehold.it/150x150" width="100" height="50" alt="metabo">metabo</a></li>
+  				<li class="mark"><a href="#bosch"><img src="img/bosch.jpg" width="100" height="50" alt="bosch"></a></li>
+  				<li class="mark"><a href="#makita"><img src="img/Makita.jpg" width="100" height="50" alt="makita"></a></li>
+  				<li class="mark"><a href="#deWALT"><img src="img/DeWALT.jpg" width="100" height="50" alt="deWALT"></a></li>
+  				<li class="mark"><a href="#interskol"><img src="img/interskol.jpg" width="100" height="50" alt="interskol"></a></li>
+  				<li class="mark"><a href="#hitachi"><img src="img/hitachi.jpg" width="100" height="50" alt="hitachi"></a></li>
+  				<li class="mark"><a href="#lg"><img src="img/LG.jpg" width="100" height="50" alt="lg"></a></li>
+  				<li class="mark"><a href="#AEG"><img src="img/AEG.jpg" width="100" height="50" alt="AEG"></a></li>
+  				<li class="mark"><a href="#metabo"><img src="img/metabo.jpg" width="100" height="50" alt="metabo"></a></li>
   			</ul>
   		</section>
   		<section class="service">
@@ -187,9 +190,9 @@
   		</section>
   	</main>
 
-  	<footer>
+  	<footer class="main-footer">
   		<section class="footer-navigation">
-  			<a class="logo">ТЕХНОМАРТ</a>
+  			<a class="footer-logo">ТЕХНОМАРТ</a>
   			<p class="footer-contacts">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br>+7(812)555-05-55</p>
   			<ul class="footer-site-navigation">
   				<li class="footer-navigation-item"><a href="About.html">Компания</a></li>
@@ -222,12 +225,12 @@
   	<section class="lost">
   		<form class="lost-form">
   			<label for="form-name">Ваше имя:</label><br>
-  			<input type="text" name="user-name" placeholder="Имя Фамилия" id="form-name"><br>
+  			<input type="text" name="user-name" placeholder="Имя Фамилия" id="form-name" class="lost-input"><br>
   			<label for="form-email">Ваш e-mail:</label><br>
-  			<input type="email" name="user-email" placeholder="email@example.com" id="form-email"><br>
+  			<input type="email" name="user-email" placeholder="email@example.com" id="form-email" class="lost-input"><br>
   			<label for="form-text">Текст письма:</label><br>
-  			<textarea placeholder="В свободной форме" id="form-text"></textarea>
-  			<input type="submit" name="submit" value="Отправить">
+  			<textarea placeholder="В свободной форме" id="form-text" class="lost-input"></textarea>
+  			<input type="submit" name="submit" value="Отправить" class="submit-popup">
   		</form>
   		<button type="button" class="modal-close">Закрыть</button>
   	</section>
