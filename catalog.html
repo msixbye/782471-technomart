@@ -2,12 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Техномарт - каталог</title>
+    <title>Техномарт - главная</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> <!--Cuprom + PTsans-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-      <header class="header">
+    <header class="header-catalog">
       <section class="header-list">
-        <a class="header-logo">ТЕХНОМАРТ</a> 
+        <a href="#" class="header-logo">ТЕХНОМАРТ</a> 
           <ul class="header-navigation">
             <li class="header-link"><a>Закладки:</a></li>
             <li class="header-link"><a>Корзина:</a></li>
@@ -21,8 +24,8 @@
         <p class="main-phone">+7(812)555-05-55</p>
         <p class="main-address">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
         <ul class="user-navigation">
-          <li class="header-login"><a href="">Войти</a></li>
-          <li class="header-login"><a href="">Регистрация</a></li>
+          <li class="header-login"><a href="#">Войти</a></li>
+          <li class="header-login"><a href="#">Регистрация</a></li>
         </ul>
       </div>
       <nav class="navigation">
@@ -38,24 +41,28 @@
       </nav>
     </header>
 
-  	<main>
+  	<main class="main-catalog">
       <ul class="breadcrumbs">
         <li class="breadcrumbs-main"><a href="index.html"><img src="###" alt="Главная страница"></li>
         <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
         <li class="breadcrumbs-item"><a href="Tools.html">Инструмент</a></li>
         <li class="breadcrumbs-corrent"><a>Перфораторы</a></li>
       </ul>
-      <h1 class="main-item">Перфораторы</h1>
+      <div class="main-item-box">
+        <h1 class="main-item">Перфораторы</h1>
+      </div>
       <section class="filters">
           <form class="catalog-form">
-            <h3 class="catalog-h3">Фильтр:</h3>
-            <fieldset>
-              <legend class="catalog-form-title">Цена</legend>
-              <input type="range" name="renge" class="renge" min="0" max="35000" value="30000" id="range">
+            <h3 class="catalog-filter">Фильтр:</h3>
+            <fieldset class="catalog-field">
+              <legend class="catalog-form-title">Цена:</legend>
+              <div class="range-box">
+                <input type="range" name="renge" class="range" min="0" max="35000" value="30000" id="range">
+              </div>
               <output class="range-output">0</output>
               <output class="range-output">0</output>
             </fieldset>
-            <fieldset>
+            <fieldset class="catalog-field">
             <legend class="catalog-form-title">Производители:</legend>
               <ul class="catalog-company">
                 <li><label class="company-checkbox"><input type="checkbox" name="catelog-company" checked><span class="checkbox-indicator"></span>BOSCH</label></li>
@@ -65,23 +72,25 @@
                 <li><label class="company-checkbox"><input type="checkbox" name="catelog-company"><span class="checkbox-indicator"></span>HITACHI</label></li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="catalog-field">
               <legend class="catalog-form-title">Питание:</legend>
-              <ul>
+              <ul class="catalog-company">
                 <li class="catalog-supply"><input type="radio" name="catalog-supply"><span class="catalog-supply-icon"></span>Аккумуляторные</li>
                 <li class="catalog-supply"><input type="radio" name="catalog-supply"><span class="catalog-supply-icon"></span>Сетевые</li>
               </ul>
             </fieldset>
-            <button type="submit" name="submit-form" class="submit-button">Показать</button>
+            <button type="submit" name="submit-form" class="catalog-submit-button">Показать</button>
           </form>
       </section>
       <section class="sort">
-        <h3 class="catalog-h3">Сортировка</h3>
-        <a href="#" class="sort-type">По цене</a>
-        <a href="#" class="sort-type">По типу</a>
-        <a href="#" class="sort-type">По функционалу</a>
-        <a href="#" class="arrow-up">По убыванию</a>
-        <a href="#" class="arrow-down">По возрастанию</a>
+        <h3 class="catalog-filter">Сортировка:</h3>
+        <ul class="catalog-sort">
+          <li class="sort-type"><a href="#">По цене</a></li>
+          <li class="sort-type"><a href="#">По типу</a></li>
+          <li class="sort-type"><a href="#">По функционалу</a></li>
+          <li class="arrow-up"><a href="#">По убыванию</a></li>
+          <li class="arrow-down"><a href="#">По возрастанию</a></li>
+        </ul>
       </section>
       <ul class="catalog-list">
           <li class="catalog-item">
@@ -109,7 +118,7 @@
           </li>
         </ul>
       <ul class="pagination-list">
-        <li class="pagination-corrent">1</li>
+        <li class="pagination-button"><a href="#">1</a></li>
         <li class="pagination-button"><a href="#">2</a></li>
         <li class="pagination-button"><a href="#">3</a></li>
         <li class="pagination-next"><a href="#">Следующая</a></li>
@@ -120,9 +129,9 @@
       </section>
     </main> 
 
-    <footer>
+    <footer class="footer-catalog">
       <section class="footer-navigation">
-        <a class="logo">ТЕХНОМАРТ</a>
+        <a class="footer-logo">ТЕХНОМАРТ</a>
         <p class="footer-contacts">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br>+7(812)555-05-55</p>
         <ul class="footer-site-navigation">
           <li class="footer-navigation-item"><a href="About.html">Компания</a></li>
