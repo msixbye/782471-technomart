@@ -872,14 +872,29 @@ input[class=search]:focus {
 /*----------------------------------flex-elements----------------------------------*/
 
 
-.header {
+.header,
+.header-catalog {
 	width: 100%;
 	margin-bottom: 60px;
 
 /**/
 	min-width: 320px;
-	/*background-color: rgba(142, 215, 143, 0.3);
-	outline: 2px solid rgba(142, 215, 143, 0.6);*/
+	background-color: rgba(142, 215, 143, 0.3);
+	outline: 2px solid rgba(142, 215, 143, 0.6);
+}
+
+.header-catalog {
+	margin-bottom: 0;
+}
+
+.main-container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+
+/**/
+	background-color: rgba(242, 215, 143, 0.3);
+	outline: 2px solid rgba(242, 215, 143, 0.6);
 }
 
 .container {
@@ -888,8 +903,8 @@ input[class=search]:focus {
 	padding: 0 10px;
 
 /**/
-	/*background-color: rgba(242, 215, 143, 0.3);
-	outline: 2px solid rgba(242, 215, 143, 0.6);*/
+	background-color: rgba(242, 215, 143, 0.3);
+	outline: 2px solid rgba(242, 215, 143, 0.6);
 }
 
 .header-list {
@@ -917,8 +932,8 @@ input[class=search]:focus {
 
 /**/
 	/*display: block;*/
-	/*background-color: rgba(122, 25, 143, 0.3);
-	outline: 2px solid rgba(122, 25, 143, 0.6);*/
+	background-color: rgba(122, 25, 143, 0.3);
+	outline: 2px solid rgba(122, 25, 143, 0.6);
 }
 
 .header-navigation {
@@ -930,8 +945,8 @@ input[class=search]:focus {
 
 /**/
 	min-height: 42px;
-	/*background-color: rgba(122, 25, 143, 0.3);
-	outline: 2px solid rgba(122, 25, 143, 0.6);*/
+	background-color: rgba(122, 25, 143, 0.3);
+	outline: 2px solid rgba(122, 25, 143, 0.6);
 }
 
 .header-search {
@@ -943,8 +958,8 @@ input[class=search]:focus {
 	order: 2;
 /**/
 	min-height: 42px;
-	/*background-color: rgba(122, 25, 143, 0.3);
-	outline: 2px solid rgba(122, 25, 143, 0.6);*/
+	background-color: rgba(122, 25, 143, 0.3);
+	outline: 2px solid rgba(122, 25, 143, 0.6);
 }
 
 /*=============================*/
@@ -954,8 +969,14 @@ input[class=search]:focus {
 	margin-bottom: 40px;
 
 	min-height: 75px;
-	/*background-color: rgba(242, 215, 143, 0.3);
-	outline: 2px solid rgba(242, 215, 143, 0.6);*/
+	background-color: rgba(242, 215, 143, 0.3);
+	outline: 2px solid rgba(242, 215, 143, 0.6);
+}
+
+.header-title .container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .main-title {
@@ -983,7 +1004,8 @@ input[class=search]:focus {
 	outline: 2px solid rgba(122, 25, 143, 0.6);*/
 }
 
-.user-navigation {
+.user-navigation,
+.user-navigation-logged {
 	width: 300px;
 	margin: 0;
 	padding: 0;
@@ -993,12 +1015,6 @@ input[class=search]:focus {
 	min-height: 45px;
 	/*background-color: rgba(122, 25, 143, 0.3);
 	outline: 2px solid rgba(122, 25, 143, 0.6);*/
-}
-
-.header-title .container {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
 }
 
 /*=============================*/
@@ -1301,3 +1317,104 @@ input[class=search]:focus {
 	/*background-color: rgba(122, 25, 43, 0.3);
 	outline: 2px solid rgba(122, 25, 43, 0.6);*/
 }
+
+
+/*============CATALOG=================*/
+
+.breadcrumbs {
+	margin: 0;
+	padding: 0;
+}
+
+.breadcrumbs li{
+	display: inline;
+
+	margin: 0;
+	padding: 0;
+}
+
+.main-catalog {
+	margin: 0;
+	padding: 0;
+}
+
+/**/
+
+.main-item-box {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+
+/**/
+	background-color: rgba(242, 215, 143, 0.3);
+	outline: 2px solid rgba(242, 215, 143, 0.6);
+}
+
+.main-container {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 60px;
+}
+
+.filters {
+	width: 220px;
+
+	min-height: 200px;
+}
+
+.sort {
+	display: flex;
+	flex-direction: column;
+	width: 700px;
+
+	min-height: 400px;
+}
+
+.main-sort li {
+	display: inline;
+}
+
+.main-sort {
+	width: 700px;
+	min-height: 38px;
+	margin: 0;
+	padding: 0;
+
+	margin-bottom: 20px;
+	background-color: rgba(122, 25, 43, 0.3);
+	outline: 2px solid rgba(122, 25, 43, 0.6);
+}
+
+.sort .catalog-list {
+	width: 700px;
+	min-height: 994px;
+	margin: 0;
+	padding: 0;
+
+
+	margin-bottom: 52px;
+	background-color: rgba(122, 25, 43, 0.3);
+	outline: 2px solid rgba(122, 25, 43, 0.6);
+}
+
+.pagination-list {
+	width: 300px;
+	margin: 0;
+	padding: 0;
+
+	min-height: 38px;
+	background-color: rgba(122, 25, 43, 0.3);
+	outline: 2px solid rgba(122, 25, 43, 0.6);
+}
+
+.pagination-list li {
+	display: inline;
+}
+
+.main-info-desc {
+	padding: 0;
+	margin: 0;
+}
+
+/*==============================*/
