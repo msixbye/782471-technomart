@@ -12,16 +12,16 @@
 
   		<section class="header-list">
         <div class="container">
-  			 <a href="#" class="header-logo">ТЕХНОМАРТ</a> 
+  			 <div class="header-logo"><a href="index.html">ТЕХНОМАРТ</a></div>
   				<ul class="header-navigation">
-  					<li class="header-link"><a>Закладки:</a></li>
-  					<li class="header-link"><a>Корзина:</a></li>
+  					<li class="header-link"><a href="#" class="bookmark-icon">Закладки: 0</a></li>
+  					<li class="header-link"><a href="#" class="cart-icon">Корзина: 0</a></li>
   					<li class="checkout"><a href="checkout.html">Оформить заказ</a></li>
   				</ul>
           <ul class="header-search">
             <li>
-  				    <label for="search" class="search">Поиск:</label>
-  				    <input type="search" class="search" name="search" id="search">
+  				    <label for="search" class="search-label"></label>
+  				    <input type="search" class="search" name="search" id="search" placeholder="Поиск:">
             </li>
           </ul>
         </div>
@@ -29,13 +29,13 @@
 
   		<div class="header-title">
         <div class="container">
-  			   <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+  			   <h1 class="main-title">Интернет-магазин строительных материалов<br>и инструментов для ремонта</h1>
   			    <div class="main-contacts">
-              <p class="main-phone">+7(812)555-05-55</p>
-              <p class="main-address">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+              <p class="main-phone">+7 (812) 555-05-55</p>
+              <p class="main-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
   			   <ul class="user-navigation">
-  				    <li class="header-login"><a href="#">Войти</a></li>
+  				    <li class="header-login"><a href="#" class="login">Войти</a></li>
   				    <li class="header-login"><a href="#">Регистрация</a></li>
   			   </ul>
            <nav class="navigation">
@@ -70,7 +70,7 @@
   	<main class="main">
   		<section class="main-offers">
         <div class="container">
-  			<!-- <h2 class="visually-hidden">Услуги и предложения</h2> -->
+  			<h2 class="visually-hidden">Услуги и предложения</h2>
   			<ul class="offers-top">
   				<li class="offers-item">
   					<b class="offers-title">Материалы</b>
@@ -88,21 +88,21 @@
         <ul class="offers-bottom">
           <li class="offers-item-slider">
           <ul>
-          <li class="slider">
+          <li class="slider visually-hidden">
             <p class="slider-title">Перфораторы</p>
             <p class="slider-description">Настоящие мужские игрушки</p>
             <button class="slider-button-left" type="button">назад</button>
             <button class="slider-button-rigt" type="button">вперед</button>
             <a href="Catalog.html" class="open-catalog">открыть каталог</a>
           </li>
-          <!-- <li class="slider">
+          <li class="slider">
             <p class="slider-title">Дрели</p>
             <p class="slider-description">Соседям на радость!</p>
-            <button class="slider-button-left" type="button">назад</button>
-            <button class="slider-button-rigt" type="button">вперед</button>
+            <button class="slider-button-left" type="button"><span class="visually-hidden">назад</span></button>
+            <button class="slider-button-rigt" type="button"><span class="visually-hidden">вперед</span></button>
             <a href="Catalog.html" class="open-catalog">открыть каталог</a>
           </li>
-          <input type="radio" name="slider-radio"><span class="visually-hidden">слайд 1 </span>
+       <!--    <input type="radio" name="slider-radio"><span class="visually-hidden">слайд 1 </span>
           <input type="radio" name="slider-radio"><span class="visually-hidden">слайд 2 </span> -->
           </ul>
           </li>
