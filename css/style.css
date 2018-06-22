@@ -931,6 +931,8 @@ input[class=search]:focus {
 	height: 318px;
 	margin: 0px;
 	padding: 0px;
+
+	border: 1px solid #eaeaea;
 }
 
 .catalog-item:hover {
@@ -938,9 +940,12 @@ input[class=search]:focus {
 }
 
 .catalog-item-title {
+	display: block;
 	font-size: 18px;
 	line-height: 20px;
 	color: #000000;
+
+	vertical-align: middle;
 }
 
 .catalog-old-price {
@@ -993,6 +998,17 @@ input[class=search]:focus {
 }
 
 
+.marks .popular-link {
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-right: 24px;
+	padding: 10px 68px;
+}
+
 .mark-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -1005,19 +1021,69 @@ input[class=search]:focus {
 }
 
 .mark {
+/*	width: 220px;
+	height: 145px;
+	margin-bottom: 20px;
+
+	border: 1px solid #eaeaea;*/
+}
+
+.mark a {
+	display: block;
+
 	width: 220px;
 	height: 145px;
+
 	margin-bottom: 20px;
 
 	border: 1px solid #eaeaea;
 }
 
-.mark img:hover {
+.mark:nth-child(1) img {
+	margin-top: 53px;
+	margin-left: 47px;
+}
+
+.mark:nth-child(2) img {
+	margin-top: 50px;
+	margin-left: 48px;
+}
+
+.mark:nth-child(3) img {
+	margin-top: 48px;
+	margin-left: 37px;
+}
+
+.mark:nth-child(4) img {
+	margin-top: 57px;
+	margin-left: 20px;
+}
+
+.mark:nth-child(5) img {
+	margin-top: 58px;
+	margin-left: 28px;
+}
+
+.mark:nth-child(6) img {
+	margin-top: 35px;
+	margin-left: 48px;
+}
+
+.mark:nth-child(7) img {
+	margin-top: 23px;
+	margin-left: 35px;
+}
+
+.mark:nth-child(8) img {
+	margin-top: 34px;
+	margin-left: 9px;
+}
+
+.mark a:hover {
 	box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.mark img:focus,
-.mark img:active {
+.mark a:active {
 	box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -1040,13 +1106,29 @@ input[class=search]:focus {
 	display: flex;
 	justify-content: space-between;
 	width: 940px;
+
+	margin: 0;
+	padding: 0;
+	padding-bottom: 102px;
 }
 
 .main-info-title {
+	display: block;
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
+
+	padding: 0;
+	margin: 0;
+	padding-top: 68px;
+	padding-bottom: 40px;
+
+}
+
+.main-info-desc {
+	padding: 0;
+	margin: 0;
 }
 
 
@@ -1069,22 +1151,24 @@ input[class=search]:focus {
 	list-style: none;
 
 	width: 240px;
-	height: 182px;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 102px;
+	margin-top: 75px;
 
 }
 
 .servise-slider-item {
 	width: 620px;
-	height: 182px;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 102px;
 }
 
 .service-button {
+	display: block;
+	padding-top: 14px;
+	padding-bottom: 16px;
+	padding-left: 17px;
+
 	box-shadow: 0 1px 0 0 #293449,
 				inset 0 1px 0 0 #405069;
 
@@ -1141,9 +1225,36 @@ input[class=search]:focus {
 	list-style: none;
 }
 
-.main-info-title {
+.main-about .main-info-title {
 	margin: 0;
 	padding: 0;
+}
+
+.main-about .main-info-desc {
+	margin: 0;
+	padding: 0;
+	margin-top: 35px;
+	margin-bottom: 28px;
+}
+
+.main-about-li {
+	margin-bottom: 25px;
+}
+
+.main-about .main-about-button {
+	display: inline-block;
+	font-family: "Cuprum",Arial,sans-serif;
+
+	padding: 10px 40px;
+}
+
+.main-about .lost-popup {
+	font-family: "Cuprum",Arial,sans-serif;
+
+	display: inline-block;
+	white-space: nowrap;
+
+	padding: 10px 62px;
 }
 
 /*==============================================FOOTER===================================*/
@@ -1174,9 +1285,13 @@ input[class=search]:focus {
 }
 
 .footer-logo {
+	display: inline-block;
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
+
+	padding: 19px 40px;
+	margin-bottom: 25px;
 
 	background-color: #ee3643;
 	box-shadow: inset 0 -5px 0 0 #b52933;
@@ -1191,6 +1306,38 @@ input[class=search]:focus {
 .footer-logo:active {
 	background-color: #ba2732;
 	box-shadow: inset 0 -5px 0 0 #8e1e26;
+}
+
+.footer-contacts {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-site-navigation,
+.footer-goods-navigation {
+	padding: 0;
+	margin: 0;
+
+	display: flex;
+}
+
+.footer-site-navigation {
+	justify-content: space-between;
+
+	margin-top: 36px;
+}
+
+.footer-goods-navigation {
+	justify-content: space-between;
+
+	margin-top: 36px;
+}
+
+.footer-site-navigation li {
+}
+
+.footer-goods-navigation li {
+	margin-left: 30px;
 }
 
 .footer-site-navigation,
@@ -1289,6 +1436,12 @@ input[class=search]:focus {
 	margin: 0;
 	margin-left: 160px;
 	margin-right: 119px;
+
+	white-space: nowrap;
+}
+
+.social li {
+	display: inline-block;
 }
 
 .footer-mail {
@@ -1296,6 +1449,12 @@ input[class=search]:focus {
 	min-height: 42px;
 	padding: 0;
 	margin: 0;
+}
+
+.footer-mail-item {
+	display: inline-block;
+
+	margin-right: 45px;
 }
 
 /*==================================POPUP================================*/
