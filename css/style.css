@@ -455,11 +455,34 @@ input[class=search]:focus {
 }
 
 .user-login {
+	display: block;
+
+	padding-left: 47px;
+	padding-right: 70px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	white-space: nowrap;
+	margin-top: 46px;
+	margin-bottom: 10px;
+
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
 
 	background-color: #ffffff;
+}
+
+.user-navigation-logged li {
+	display: inline-block;
+}
+
+.header-login-room {
+	margin-right: 70px;
+}
+
+.header-login-orders {
+	margin-left: 15px;
+	margin-right: 27px;
 }
 
 .user-login:hover {
@@ -1527,13 +1550,13 @@ input[class=search]:focus {
 	padding: 0;
 }
 
-
 .breadcrumbs {
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 20px;
 
 	list-style: none;
 }
@@ -1543,6 +1566,8 @@ input[class=search]:focus {
 
 	margin: 0;
 	padding: 0;
+
+	margin-left: 35px;
 }
 
 .breadcrumbs a {
@@ -1554,6 +1579,7 @@ input[class=search]:focus {
 	width: 940px;
 	margin: 0 auto;
 	padding: 0 10px;
+	margin-bottom: 20px;
 
 	background-color: #f2f6f8;
 }
@@ -1566,12 +1592,19 @@ input[class=search]:focus {
 }
 
 .main-item {
+	display: block;
+
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
-
 	text-transform: uppercase;
+
+	margin: 0;
+	padding: 0;
+	padding-left: 29px;
+	padding-top: 29px;
+	padding-bottom: 30px;
 }
 
 .filters {
@@ -1773,6 +1806,10 @@ input[class=search]:focus {
 
 	padding: 0;
 	margin: 0;
+}
+
+.main-catalog .catalog-item-about .main-info-desc {
+	padding-bottom: 70px;
 }
 
 /*----------------------------------flex-elements----------------------------------*/
