@@ -10,38 +10,34 @@
   <body>
   	<header class="header">
 
-  		<section class="header-list">
+  		<section class="header-top-nav">
         <div class="container">
   			 <a href="index.html" class="header-logo">ТЕХНОМАРТ</a>
-          <ul class="header-search">
-            <li>
             <form type="text" method="post" action="https://echo.htmlacademy.ru">
               <p class="search-box">
                 <input type="search" class="search" name="search" id="search" placeholder="Поиск:">
                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
               </p>
             </form>
-            </li>
           </ul>
   				<ul class="header-navigation">
-  					<li class="header-link"><a href="#" class="bookmark-icon">Закладки: 0</a></li>
-  					<li class="header-link"><a href="#" class="cart-icon">Корзина: 0</a></li>
+  					<li class="header-nav-item"><a href="#" class="bookmark-icon">Закладки: 0</a></li>
+  					<li class="header-nav-item"><a href="#" class="cart-icon">Корзина: 0</a></li>
   					<li class="checkout"><a href="checkout.html">Оформить заказ</a></li>
   				</ul>
         </div>
   		</section>
 
-  		<div class="header-title">
-        <div class="container">
-          <div class="user-box">
-  			   <h1 class="main-title">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
+        <div class="header-info">
+          <div class="header-user-info">
+  			   <h1 class="main-title">Интернет-магазин строительных материалов<br>и инструментов для ремонта</h1>
   			    <div class="main-contacts">
               <p class="main-phone">+7 (812) 555-05-55</p>
               <p class="main-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
-  			   <ul class="user-navigation">
-  				    <li class="header-login"><a href="#" class="login">Войти</a></li>
-  				    <li class="header-login"><a href="#">Регистрация</a></li>
+  			   <ul class="user-navigation-item">
+  				    <li class="header-user"><a href="#" class="login">Войти<svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M14.875 8.5L6 0v6H0v5h6v6z"/><path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg></a></li>
+  				    <li class="header-user"><a href="#">Регистрация</a></li>
   			   </ul>
           </div>
            <nav class="navigation">
@@ -56,7 +52,6 @@
             </ul>
            </nav>
         </div>
-  		</div>
   	</header>
 
   	<main class="main">
@@ -64,19 +59,19 @@
         <div class="container">
   			<h2 class="visually-hidden">Услуги и предложения</h2>
   			<ul class="offers-top">
-  				<li class="offers-item new">
+  				<li class="offers-item new materials">
             <div class="offers-box">
   					<b class="offers-title">Материалы</b>
   					<a class="links-button" href="#">на любой вкус</a>
             </div>
    				</li>
-   				<li class="offers-item">
+   				<li class="offers-item tools">
             <div class="offers-box">
    					<b class="offers-title">Инструмент</b>
    					<a class="links-button" href="#">на все случаи</a>
             </div>
    				</li>
-   				<li class="offers-item">
+   				<li class="offers-item tech">
             <div class="offers-box">
    					<b class="offers-title">Техника</b>
    					<a class="links-button" href="#">для стройки</a>
@@ -109,13 +104,13 @@
           </ul>
           </li>
           <div class="offers-bottom-left">
-   				<li class="offers-item">
+   				<li class="offers-item sale">
             <div class="offers-box">
    					<b class="offers-title">Скидки 50%</b>
    					<a class="links-button" href="#">на 350 товаров</a>
             </div>
    				</li>
-   				<li class="offers-item">
+   				<li class="offers-item delivery-icon">
             <div class="offers-box">
    					<b class="offers-title">Доставка</b>
    					<a class="links-button" href="#">бесплатно</a>
@@ -202,14 +197,14 @@
   				<a href="#" class="popular-link">Все производители</a>
   			</div>
   			<ul class="mark-list">
-  				<li class="mark"><a href="#bosch"><span class="visually-hidden">Bosch</span><img src="img/bosch.jpg" width="218" height="142" alt="bosch"></a></li>
-  				<li class="mark"><a href="#makita"><span class="visually-hidden">Makita</span><img src="img/Makita.jpg" width="218" height="142" alt="makita"></a></li>
-  				<li class="mark"><a href="#deWALT"><span class="visually-hidden">DeWALT</span><img src="img/DeWALT.jpg" width="218" height="142" alt="deWALT"></a></li>
-  				<li class="mark"><a href="#interskol"><span class="visually-hidden">Interskol</span><img src="img/interskol.jpg" width="218" height="142" alt="interskol"></a></li>
-  				<li class="mark"><a href="#hitachi"><span class="visually-hidden">Hitachi</span><img src="img/hitachi.jpg" width="218" height="142" alt="hitachi"></a></li>
-  				<li class="mark"><a href="#lg"><span class="visually-hidden">LG</span><img src="img/LG.jpg" width="218" height="142" alt="lg"></a></li>
-  				<li class="mark"><a href="#AEG"><span class="visually-hidden">AEG</span><img src="img/AEG.jpg" width="218" height="142" alt="AEG"></a></li>
-  				<li class="mark"><a href="#metabo"><span class="visually-hidden">Metabo</span><img src="img/metabo.jpg" width="218" height="142" alt="metabo"></a></li>
+  				<li class="mark"><a href="#bosch"><img src="img/bosch.jpg" width="218" height="142" alt="bosch"></a></li>
+  				<li class="mark"><a href="#makita"><img src="img/Makita.jpg" width="218" height="142" alt="makita"></a></li>
+  				<li class="mark"><a href="#deWALT"><img src="img/DeWALT.jpg" width="218" height="142" alt="deWALT"></a></li>
+  				<li class="mark"><a href="#interskol"><img src="img/interskol.jpg" width="218" height="142" alt="interskol"></a></li>
+  				<li class="mark"><a href="#hitachi"><img src="img/Hitachi.jpg" width="218" height="142" alt="hitachi"></a></li>
+  				<li class="mark"><a href="#lg"><img src="img/LG.jpg" width="218" height="142" alt="lg"></a></li>
+  				<li class="mark"><a href="#AEG"><img src="img/AEG.jpg" width="218" height="142" alt="AEG"></a></li>
+  				<li class="mark"><a href="#metabo"><img src="img/Metabo.jpg" width="218" height="142" alt="metabo"></a></li>
   			</ul>
         </div>
   		</section>
@@ -221,7 +216,7 @@
   				Хороший интернет-магазин отличается от плохого не только ценами!<br>
   				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
   			<div class="service-slider">
-  				<ul class="service-slider-list service-shadow">
+  				<ul class="service-slider-list">
   					<li class="service-button"><button type="button">Доставка</button></li>
   					<li class="service-button"><button type="button">Гарантия</button></li>
   					<li class="service-button"><button type="button">Кредит</button></li>
@@ -321,7 +316,7 @@
   		</section>
   	</footer>
 
-  	<section class="lost visually-hidden">
+  	<section class="lost">
   		<form class="lost-form" action="https://echo.htmlacademy.ru" method="get">
         <div class="form-box">
   			 <label for="form-name"><p class="form-label">Ваше имя:</p>
@@ -346,7 +341,7 @@
   		<button type="button" class="modal-close close"><span class="visually-hidden">Закрыть</span></button>
   	</section>
 
-    <section class="cart-popup visually-hidden">
+    <section class="cart-popup">
       <h2 class="cart-title">Товар добавлен в корзину</h2>
       <div class="cart-box">
         <a href="#" class="cart-checkout">Оформить заказ</a>
@@ -354,5 +349,30 @@
       </div>
       <button type="button" class="modal-close close"><span class="visually-hidden">Закрыть</span></button>
     </section>
+
+    <script type="text/javascript">
+      var link = document.querySelector(".lost-popup");
+      var cartlink = document.querySelector(".item-hovering .item-buy");
+      var cart = document.querySelector(".cart-popup");
+      var popup = document.querySelector(".lost");
+      var close = popup.querySelector(".modal-close");
+
+      cartlink.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        cart.classList.add("modal-show");
+      });
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      });    
+
+
+    </script>
   </body>
 </html>
